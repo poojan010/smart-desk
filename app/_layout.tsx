@@ -4,6 +4,7 @@ import { useFonts } from 'expo-font';
 import * as SplashScreen from 'expo-splash-screen';
 import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
 import 'react-native-reanimated';
+import { setStatusBarStyle } from "expo-status-bar";
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 
@@ -15,6 +16,12 @@ export default function RootLayout() {
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
   });
+
+  useEffect(() => {
+    setTimeout(() => {
+      setStatusBarStyle(colorScheme === "dark" ? "light": "dark");
+    }, 0);
+  }, []);
 
   useEffect(() => {
     if (loaded) {
