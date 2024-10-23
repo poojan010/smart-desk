@@ -4,20 +4,21 @@
     "slug": "smart-desk",
     "version": "1.0.0",
     "orientation": "portrait",
+    "backgroundColor": "#5795ff",
     "icon": "./assets/images/icon1.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash1.png",
+      "image": "./assets/images/splash2.png",
       "resizeMode": "contain",
-      "backgroundColor": "#34c0eb"
+      "backgroundColor": "#5795ff"
     },
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/icon1.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.poojan010.smartdesk"
@@ -28,7 +29,8 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
-      "expo-router"
+      "expo-router",
+      "./translucent-default-splash-screen-config"
     ],
     "experiments": {
       "typedRoutes": true
