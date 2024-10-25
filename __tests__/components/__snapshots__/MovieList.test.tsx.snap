@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MovieList/> Snapshot 1`] = `
+<View
+  style={
+    {
+      "padding": 10,
+    }
+  }
+>
+  <RCTScrollView
+    data={
+      [
+        {
+          "id": "movie1",
+          "title": "Movie One",
+        },
+        {
+          "id": "movie2",
+          "title": "Movie Two",
+        },
+        {
+          "id": "movie3",
+          "title": "Movie Three",
+        },
+        {
+          "id": "movie4",
+          "title": "Movie Four",
+        },
+      ]
+    }
+    getItem={[Function]}
+    getItemCount={[Function]}
+    keyExtractor={[Function]}
+    onContentSizeChange={[Function]}
+    onLayout={[Function]}
+    onMomentumScrollBegin={[Function]}
+    onMomentumScrollEnd={[Function]}
+    onScroll={[Function]}
+    onScrollBeginDrag={[Function]}
+    onScrollEndDrag={[Function]}
+    removeClippedSubviews={false}
+    renderItem={[Function]}
+    scrollEventThrottle={0.0001}
+    stickyHeaderIndices={[]}
+    viewabilityConfigCallbackPairs={[]}
+  >
+    <View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Movie One
+        </Text>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Movie Two
+        </Text>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Movie Three
+        </Text>
+      </View>
+      <View
+        onFocusCapture={[Function]}
+        onLayout={[Function]}
+        style={null}
+      >
+        <Text>
+          Movie Four
+        </Text>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

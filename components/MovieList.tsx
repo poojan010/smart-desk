@@ -1,8 +1,8 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { View, Text, StyleSheet, FlatList } from 'react-native';
 
 interface Movie {
-  id: number;
+  id: string;
   title: string;
 }
 
@@ -13,7 +13,14 @@ interface MovieListProps {
 const MovieList: React.FC<MovieListProps> = ({ movies }) => (
   <View style={styles.container}>
     {movies.length > 0 ? (
-      movies.map((movie) => <Text key={movie.id}>{movie.title}</Text>)
+      <FlatList 
+        data={movies}
+        renderItem={({item}) => {
+          return(
+            <Text key={item.id}>{item.title}</Text>
+          )
+        }}
+      />
     ) : (
       <Text>No movies available</Text>
     )}
