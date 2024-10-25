@@ -1,9 +1,13 @@
 import { View, Text, StyleSheet } from 'react-native';
 
+const data = {
+  title: 'Home'
+}
+
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Home</Text>
+      <Text style={styles.text}>{data.title}</Text>
     </View>
   )
 }
