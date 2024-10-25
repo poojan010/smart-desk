@@ -13,6 +13,7 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
     <View style={styles.container}>
       <TextInput
         value={email}
+        testID='email-input'
         onChangeText={setEmail}
         placeholder="Email"
         keyboardType="email-address"
@@ -20,12 +21,13 @@ const LoginForm: React.FC<LoginFormProps> = ({ onSubmit }) => {
       />
       <TextInput
         value={password}
+        testID='password-input'
         onChangeText={setPassword}
         placeholder="Password"
         secureTextEntry
         style={styles.input}
       />
-      <Button title="Submit" onPress={() => onSubmit({ email, password })} />
+      <Button testID='submit-button' title="Submit" onPress={() => onSubmit({ email, password })} />
     </View>
   );
 };

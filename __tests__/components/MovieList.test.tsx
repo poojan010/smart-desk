@@ -1,4 +1,4 @@
-import { render, screen, userEvent, act } from "@testing-library/react-native";
+import { render, screen } from "@testing-library/react-native";
 
 import MovieList from "@/components/MovieList";
 
