@@ -1,0 +1,103 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<LoginForm/> Snapshot 1`] = `
+<View
+  style={
+    {
+      "padding": 10,
+    }
+  }
+>
+  <TextInput
+    keyboardType="email-address"
+    onChangeText={[Function]}
+    placeholder="Email"
+    style={
+      {
+        "borderColor": "#ccc",
+        "borderWidth": 1,
+        "height": 40,
+        "marginBottom": 10,
+        "paddingHorizontal": 10,
+      }
+    }
+    testID="email-input"
+    value=""
+  />
+  <TextInput
+    onChangeText={[Function]}
+    placeholder="Password"
+    secureTextEntry={true}
+    style={
+      {
+        "borderColor": "#ccc",
+        "borderWidth": 1,
+        "height": 40,
+        "marginBottom": 10,
+        "paddingHorizontal": 10,
+      }
+    }
+    testID="password-input"
+    value=""
+  />
+  <View
+    accessibilityRole="button"
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "opacity": 1,
+      }
+    }
+    testID="submit-button"
+  >
+    <View
+      style={
+        [
+          {},
+        ]
+      }
+    >
+      <Text
+        style={
+          [
+            {
+              "color": "#007AFF",
+              "fontSize": 18,
+              "margin": 8,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Submit
+      </Text>
+    </View>
+  </View>
+</View>
+`;

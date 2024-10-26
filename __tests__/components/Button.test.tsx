@@ -1,4 +1,5 @@
-import { render, screen, userEvent, act } from "@testing-library/react-native";
+import { render, screen, userEvent } from "@testing-library/react-native";
+import { act } from '@testing-library/react-hooks';
 
 import Button from "@/components/Button";
 

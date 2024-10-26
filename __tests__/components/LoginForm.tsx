@@ -1,15 +1,16 @@
-import { act, render, screen, userEvent } from "@testing-library/react-native";
+import { render, screen, userEvent } from "@testing-library/react-native";
+import { act } from '@testing-library/react-hooks';
 
 import LoginForm from "@/components/LoginForm";
 
 describe("<LoginForm/>", () => {
 
-    // test("Snapshot", () => {
-    //     const onSubmitMock = jest.fn()
-    //     const { toJSON } = render(<LoginForm onSubmit={onSubmitMock} />)
+    test("Snapshot", () => {
+        const onSubmitMock = jest.fn()
+        const { toJSON } = render(<LoginForm onSubmit={onSubmitMock} />)
 
-    //     expect(toJSON()).toMatchSnapshot()
-    // })
+        expect(toJSON()).toMatchSnapshot()
+    })
 
     test("LoginForm renders correctly", () => {
         const onSubmitMock = jest.fn()
