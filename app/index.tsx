@@ -1,13 +1,21 @@
-import { View, Text, StyleSheet } from 'react-native';
-
-const data = {
-  title: 'Home'
-}
+import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { router } from 'expo-router';
 
 const HomeScreen = () => {
+
+  const onPressProfile = () => {
+    router.push("/Profile")
+  }
+
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>{data.title}</Text>
+      
+      <Text style={styles.text}>Home</Text>
+
+      <Pressable onPress={onPressProfile} style={{marginTop:20}}>
+        <Text>Profile</Text>
+      </Pressable>
+      
     </View>
   )
 }
@@ -19,8 +27,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+    backgroundColor: 'white'
   },
   text: {
-    color: 'white'
+    color: 'black'
   }
 });
